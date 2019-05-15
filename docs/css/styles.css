@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+body {
+    position: relative;
+}
+
+header {
+    min-height: 300px;
+    background-color: #404a54;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #379c96;
+}
+
+.name {
+    max-width: 130px;
+}
+
+.name, .my-navbar {
+    padding-top: 40px;
+}
+
+.my-name {
+    font-family: 'Anton', sans-serif;
+    font-size: large;
+    font-weight: 900;
+    color: #379c96;
+    letter-spacing: 1px;
+}
+
+.name p {
+    font-family: 'Slabo 27px', serif;
+    font-size: small;
+    color: #379c96;
+}
+
+.my-navbar {
+    display: inline-block;
+}
+
+.nav-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 10px;
+    width: 130px;
+    height: 40px;
+}
+
+.nav-link {
+    color: #379c96;
+    font-family: 'Slabo 27px', serif;
+}
+
+.nav-item:hover {
+    background-color: lightgray;
+    width: 160px;
+    height: 60px;
+    margin-top: 0;
+}
+
+.nav-link:hover {
+    color: black;
+    font-family: 'Slabo 27px', serif;
+    font-size: larger;
+    line-height: 45px;
+}
+
+main {
+    text-align: -webkit-center;
+}
+
+#aboutMe {
+    background-color: white;
+    max-width: 600px;
+    min-height: 320px;
+    margin: -150px auto;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 100px;
+    top: 0;
+}
+
+.my-info p {
+    max-width: 350px;
+}
+
+.myPhoto {
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 125px;
+    display: -webkit-box;
+}
+
+.photo {
+    text-align: center;
+}
+
+.my-info {
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 290px;
+}
+
+.aboutme-name {
+    font-family: 'Anton', sans-serif;
+    color: #379c96;
+    font-size: large;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.aboutme-span {
+    font-family: 'Anton', sans-serif;
+    font-size: large;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #379c96;
+}
+
+.my-info p {
+    margin-top: 10px;
+    min-height: 145px;
+}
+
+.info-span {
+    font-weight: bold;
+}
+
+.age, .email, .phone, .nationality {
+    text-align-last: justify;
+}
+
+.age {
+    margin-top: 15px;
+}
+
+#experience {
+    margin-top: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#education {
+    margin-top: -3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.exp-title, .ed-title, .skills-title {
+    font-family: 'Anton', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 1px solid lightgray;
+    color: lightgray;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.exp-div, .ed-div, .skills-div {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.period {
+    margin-top: 10px;
+    max-width: 115px;
+}
+
+.organisation {
+    margin-top: 10px;
+    max-width: 440px;
+    text-align: justify;
+}
+
+.exp-name, .ed-name {
+    font-weight: 700;
+}
+
+.position {
+    font-weight: 300;
+    border-bottom: .5px solid black;
+    line-height: 30px;
+}
+
+.place {
+    width: 440px;
+}
+
+.add-education {
+    background-color: white;
+    flex-direction: column;
+    margin-top: -3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.skills {
+    background-color: white;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+}
+
+.skills-div ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.skills-div ul li {
+    display: inline-flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.skills-div ul li p {
+    text-align: center;
+    margin: 0;
+    width: 160px;
+}
+
+@media screen and (max-width: 510px) {
+    #aboutMe {
+        background-color: white;
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #aboutMe {
+        background-color: white;
+        max-width: 400px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .my-info {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 330px) {
+    .nav-item:hover {
+        background-color: lightgray;
+        margin-top: 0;
+    }
+    .nav-link:hover {
+        color: black;
+        font-family: 'Slabo 27px', serif;
+    }
+}
